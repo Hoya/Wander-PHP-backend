@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Wander</title>
+
+<link type="text/css" rel="stylesheet" href="/css/wombat.css" />
+<link rel="shortcut icon" href="/img/favicon.ico?ver=1.2" type="image/x-icon" />
+
+</head>
+
+<body>
+<div id="wrapper">
+<div id="main">
+	<div id="header">
+    	<a href="http://wanderwith.us" title="Wander" id="wanderlogo">Wander</a>
+      	<a href="http://wndrw.me/ppE0MC"><img src="/img/viewPhoto/btn_download.png" class="webdownload" /></a>
+    </div>
+
+<div id="leftcol">
+<h2>We're sorry, the page you're looking for could not be found.</h2>
+<p>It happens sometimes. Please accept our apologies.</p>
+
+</div><!-- END leftcol -->
+<div id="rightcol">
+	<div id="abouttext">
+	<p>Wander is a fun way to start exploring the world, with a new friend as your local guide.</p>
+    <p>Check it out in the <a href="http://wndrw.me/ppE0MC">App Store</a>!</p>
+	</div>
+</div><!-- END rightcol-->
+</div><!-- END main -->
+</div><!--END wrapper-->
+</body>
+</html>
+
+<!--
+
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: <?php echo $severity; ?></p>
+<p>Message:  <?php echo $message; ?></p>
+<p>Filename: <?php echo $filepath; ?></p>
+<p>Line Number: <?php echo $line; ?></p>
+
+</div>
+-->

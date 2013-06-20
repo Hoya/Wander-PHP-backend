@@ -1,0 +1,445 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*	---------- CSS Reset	---------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+/* tables still need cellspacing="0" in the markup */
+
+table { border-collapse:collapse; border-spacing:0; }
+
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+
+input, select { vertical-align:middle; }
+
+/*	---------- END CSS Reset	---------- */
+
+
+
+/*	---------- Wrapper	---------- */
+
+html, body {
+	height: 100%;
+	background:#f2f2f2 url('/img/viewPhoto/bg_grit.jpg');
+
+}
+
+#wrapper {
+	min-height: 100%;
+	background:transparent url('/img/viewPhoto/bg_blackbar.png') top left repeat-x;
+}
+
+
+#mobilewrapper {
+	min-height: 100%;
+	background:transparent url('/img/viewPhoto/bg_blackbar.png') top left repeat-x;
+	width:640px;
+}
+
+#main {
+	overflow:hidden;
+	width:960px;
+	padding:0 20px;
+	margin:0 auto;
+}
+
+#mobilemain {
+	overflow:hidden;
+	width:620px;
+	padding:0 10px;
+	margin:0 auto;
+}
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;
+}
+
+/*	---------- END Wrapper	---------- */
+
+
+/*	---------- General	---------- */
+
+body {
+	color:#000;
+	font-size:62.5%;
+	line-height:1.125;
+	font-family:sans-serif;
+}
+
+img { 
+	border:0px;
+}
+
+a:link {
+	color:#00C1DE;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#00C1DE;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#0D99C1;
+	text-decoration:none;
+}
+
+a:active {
+	color:#0D99C1;
+	text-decoration:none;
+}
+
+p {
+	font-size:131%;
+	margin-bottom:1.5em;
+	color:#666;
+}
+
+h1 {
+	font-size:300%;	
+	font-weight:100;
+}
+
+h2 {
+	font-size:200%;
+	font-weight:200;
+	margin-bottom:0.2em;	
+}
+
+.bylinebox {
+	margin-bottom: 5px;
+	text-align:left;
+	font-size:123.1%;
+	width:580px;
+	/*height:2.2em;*/
+	display:block;
+}
+
+.mobilebylinebox {
+	margin:	20px 0 10px 15px;
+	font-size:200%;
+	float:left;
+}
+
+
+.pip {
+	height:24px;
+	/*float:left;*/
+	color:#666;
+}
+
+.pip img {
+	vertical-align:middle;
+	margin:0 !important;
+}
+
+#socialbox {
+	width:580px;
+	height:25px;
+	text-align:left;
+	display:block;
+}
+
+#mobilesocialbox {
+	width300px;
+	height:35px;
+	padding:5px 0 0 5px;
+	text-align:left;
+	display:block;
+}
+
+#phototitlebox {
+	font-size:200%;	
+	font-weight:100;
+	display:block;
+	margin-bottom:3px;
+}
+
+/*	---------- END General	---------- */
+
+
+/*	---------- Layout	---------- */
+
+#header {
+	height:100px;
+	margin-bottom:20px;
+	clear:both;
+	text-align:right;
+}
+
+#mobileheader {
+	height:100px;
+	margin:0 0 20px 5px;
+	clear:both;
+	text-align:right;
+}
+
+#wanderlogo {
+	width:220px;
+	height:60px;
+	float:left;
+	margin-top:20px;
+	text-indent: -99999em;
+	text-align:left;
+	display:block;
+	background:transparent url('/img/viewPhoto/sharelogo.jpg') no-repeat;
+	color:#000;
+	text-decoration: none;
+}
+
+.webdownload {
+	width:215px; 
+	height:60px;
+	margin-top:18px;	
+}
+
+.mobiledownload {
+	width:360px; 
+	height:50px;
+	margin-top:20px;	
+}
+
+#leftcol {
+	width:610px;
+	float:left;
+	padding:0;
+}
+
+#rightcol {
+	width:320px;
+	float:left;
+	margin-left:20px;
+}
+
+.topbox {	
+}
+
+.mobiletopbox {
+}
+
+
+/*	---------- END Layout	---------- */
+
+
+
+/*	---------- Photobox	---------- */
+
+#phototop {
+	width:610px;
+	height:15px;
+	background:transparent url('/img/viewPhoto/bg_topcap.png') no-repeat;
+}
+
+#photo {
+	width:580px;
+	background:transparent url('/img/viewPhoto/bg_sidecap.png') repeat-y;
+	padding:0 15px;
+}
+
+#photobottom {
+	width:610px;
+	height:15px;
+	background:transparent url('/img/viewPhoto/bg_bottomcap.png') no-repeat;
+}
+
+
+#mobilephototop {
+	width:610px;
+	height:15px;
+	background:transparent url('/img/viewPhoto/bg_topcap.png') no-repeat;
+	margin-left:5px;
+}
+
+#mobilephoto {
+	width:580px;
+	background:transparent url('/img/viewPhoto/bg_sidecap.png') repeat-y;
+	padding:0 15px;
+	margin-left:5px;
+}
+
+#mobilephotobottom {
+	width:610px;
+	height:15px;
+	background:transparent url('/img/viewPhoto/bg_bottomcap.png') no-repeat;
+	margin-left:5px;
+}
+
+.stumbleText {
+	font-size:220%;		
+	font-weight:100;
+	display:block;
+	margin-bottom:20px;
+	padding-left:5px;
+	height:50px;
+}
+
+/*	---------- END Photobox	---------- */
+
+
+
+
+/*	---------- Content	---------- */
+
+#postercommentbox {
+	width:600px;
+	margin-top:15px;
+	padding-left:10px;	
+	font-size:131%;
+}
+
+#FBCommentbox {
+	width:610px;
+	margin-top:30px;
+}
+
+
+#abouttext {
+	color:#999;
+	padding:5px 0;
+}
+
+#mobileabouttext {
+	color:#999;
+	padding:50px 20px 10px 20px;
+}
+
+
+#mapbox {
+	width:320px;
+	height:250px;
+	margin-bottom:20px;
+	z-index:1;
+}
+
+#framebox {
+	width:320px;
+	height:250px;
+	background: transparent url('/img/viewPhoto/bg_mapframe.png') no-repeat; 
+	position:relative;
+	top:-250px;
+	z-index:2;	
+}
+
+#pipbox {
+	width:320px;
+	height:250px;
+	background:transparent url('/img/viewPhoto/bg_facepip.png') no-repeat;
+	position:relative; 
+	top:-500px;
+	z-index:3;
+}
+
+#facebox {
+	width:90px;
+	height:90px;
+	/*background:transparent url('/img/viewPhoto/placeholder_face.png') no-repeat;*/
+	position:relative; 
+	top:-735px;
+	left:115px;
+	z-index:4;
+}
+
+#maplinkbox {
+	width:320px;
+	height:250px;
+	position:relative;
+	top:-840px;	
+	z-index:5;
+}
+
+#mobilemapbox {
+	width:600px;
+	height:360px;
+	margin:0 0 15px 10px;
+	z-index:1;
+}
+
+#mobileframebox {
+	width:600px;
+	height:360px;
+	background: transparent url('/img/viewPhoto/bg_mobilemapframe.png') no-repeat; 
+	position:relative;
+	top:-360px;
+	z-index:2;	
+}
+
+#mobilepipbox {
+	width:600px;
+	height:360px;
+	background:transparent url('/img/viewPhoto/bg_mobilefacepip.png') no-repeat;
+	position:relative; 
+	top:-720px;
+	z-index:3;
+}
+
+#mobilefacebox {
+	width:120px;
+	height:120px;
+	/*background:transparent url('/img/viewPhoto/placeholder_face.png') no-repeat;*/
+	position:relative; 
+	background-color:#FFF;
+	top:-1045px;
+	left:240px;
+	z-index:4;
+}
+
+#mobilemaplinkbox {
+	width:610px;
+	height:360px;
+	position:relative;
+	top:-1200px;	
+	z-index:5;
+}
+
+
+#thumbbox {
+	width:320px;
+}
+
+
+.thumb {
+	width:95px;
+	float:left;
+	color:#999;
+}
+
+.thumb img {
+	margin-bottom:5px;
+}
+
+
+.first {
+	margin-left:0;	
+}
+
+.second {
+	margin-left:17px;	
+}
+
+
+/*	---------- END Content	---------- */
